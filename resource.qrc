@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>category_ico.png</file>
+    <file>date_observed_ico.png</file>
+    <file>description_ico.png</file>
+    <file>dropdown.png</file>
+    <file>pwd_ico.png</file>
+    <file>requested_cd_ico.png</file>
+    <file>root_cause_ico.png</file>
+    <file>target_cd_ico.png</file>
+    <file>tool_ico.png</file>
+    <file>uname_ico.png</file>
+  </qresource>
+</RCC>

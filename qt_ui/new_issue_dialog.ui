@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+	background-color: rgb(255, 255, 255);}</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>50</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 150, 136);
+color: rgb(255, 255, 255, 255);
+font: bold 20pt;
+min-height: 3em;</string>
+     </property>
+     <property name="text">
+      <string>NEW ISSUE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollBar:vertical {             
+        border: 0px solid #999999;
+        background:white;
+        width:10px;
+        margin: 0px 0px 0px 0px;
+    }
+    QScrollBar::handle:vertical {
+        background: rgba(0,0,0,0.1);
+        min-height: 0px;
+		max-height: 50px;
+    }
+    QScrollBar::add-line:vertical {
+        background:  rgba(0,0,0,0.1);
+        height: 0px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+    QScrollBar::sub-line:vertical {
+        background:  rgba(0,0,0,0.1);
+        height: 0 px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+   }
+
+QScrollArea {
+		background-color: white;}</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QWidget" name="scrollwidget">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>-80</y>
+        <width>629</width>
+        <height>489</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#scrollwidget {background-color: white;}
+</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>621</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>50</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>20</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>30</number>
+        </property>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/category_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(0, 0, 0, 0.48);
+heigh: 1em;</string>
+            </property>
+            <property name="text">
+             <string>Category</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QComboBox" name="comboBox_3">
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+                border: none;
+                padding-bottom: 2px;
+                font-size: 12pt;
+				border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);}
+
+QComboBox::hover {
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);}
+
+QComboBox::focus {
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+QComboBox::down-arrow {
+				image: url(:/icons/dropdown.png);
+                background-color: white;
+                border: 0px white;
+                padding: 0px;
+                margin: 0px;
+                height:14px;
+                width:14px;}
+
+QComboBox::drop-down{
+				subcontrol-origin: padding;
+				subcontrol-position: center right;
+ 			    width: 15px;
+                border: 0px;
+                margin: 0px; }
+
+QComboBox QAbstractItemView {
+                font: 14pt;}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/root_cause_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+                border: none;
+                padding-bottom: 2px;
+                border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);
+                font-size: 14pt;
+				height: 1.1em;}
+
+            QLineEdit:editable {
+                padding-bottom: 2px;
+                border-bottom: 1px rgba(0,0,0,0.42);
+                color: rgba(0,0,0,0.42);}
+
+            QLineEdit:disabled {
+                border: none;
+                padding-bottom: 2px;
+                border-bottom: 1px rgba(0,0,0,0.42);
+                color: rgba(0,0,0,0.38);}
+
+            QLineEdit:hover {
+                padding-bottom: 2px;
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);
+                }
+
+            QLineEdit:focus {
+                padding-bottom: 2px;
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+            QLineEdit:pressed {
+                border-bottom: 2px #009688;
+                font: bold;
+                color: rgba(0,0,0,0.87)}</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Normal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_13">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(0, 0, 0, 0.48);
+heigh: 1em;</string>
+            </property>
+            <property name="text">
+             <string>Possible Root Cause, if known</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/description_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(0, 0, 0, 0.48);
+heigh: 1em;</string>
+            </property>
+            <property name="text">
+             <string>Short Description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+                border: none;
+                padding-bottom: 2px;
+                border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);
+                font-size: 14pt;
+				height: 1.1em;}
+
+            QLineEdit:editable {
+                padding-bottom: 2px;
+                border-bottom: 1px rgba(0,0,0,0.42);
+                color: rgba(0,0,0,0.42);}
+
+            QLineEdit:disabled {
+                border: none;
+                padding-bottom: 2px;
+                border-bottom: 1px rgba(0,0,0,0.42);
+                color: rgba(0,0,0,0.38);}
+
+            QLineEdit:hover {
+                padding-bottom: 2px;
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);
+                }
+
+            QLineEdit:focus {
+                padding-bottom: 2px;
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+            QLineEdit:pressed {
+                border-bottom: 2px #009688;
+                font: bold;
+                color: rgba(0,0,0,0.87)}</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Normal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0" colspan="3">
+           <widget class="QDateEdit" name="dateEdit_2">
+            <property name="styleSheet">
+             <string notr="true">QCalendarWidget QWidget#qt_calendar_navigationbar { background-color: #607D8B; }
+
+QCalendarWidget QToolButton {
+	color: white;
+	font-size: 12pt;
+	icon-size: 20px, 20px;
+	background-color: #607D8B;
+}
+
+
+/* header row */
+QCalendarWidget QWidget { 
+				alternate-background-color: #b0bec5; 
+				alternate-color: white;}
+
+QDateEdit {
+                border: none;
+                padding-bottom: 2px;
+                font-size: 12pt;
+				border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);}
+
+QDateEdit::hover {
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);}
+
+QDateEdit::focus {
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+QDateEdit::down-arrow {
+				image: url(:/icons/dropdown.png);
+                background-color: white;
+                border: 0px white;
+                padding: 0px;
+                margin: 0px;
+                height:14px;
+                width:14px;}
+
+QDateEdit::drop-down{
+				subcontrol-origin: padding;
+				subcontrol-position: center right;
+ 			    width: 15px;
+                border: 0px;
+                margin: 0px; }
+
+QDateEdit QAbstractItemView {
+                font: 12pt;}</string>
+            </property>
+            <property name="maximumDate">
+             <date>
+              <year>2018</year>
+              <month>7</month>
+              <day>27</day>
+             </date>
+            </property>
+            <property name="minimumDate">
+             <date>
+              <year>2018</year>
+              <month>4</month>
+              <day>27</day>
+             </date>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/requested_cd_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(0, 0, 0, 0.48);
+heigh: 1em;</string>
+            </property>
+            <property name="text">
+             <string>Requested Completion Date</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/date_observed_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="styleSheet">
+             <string notr="true">QCalendarWidget QWidget#qt_calendar_navigationbar { background-color: #607D8B; }
+
+QCalendarWidget QToolButton {
+	color: white;
+	font-size: 12pt;
+	icon-size: 20px, 20px;
+	background-color: #607D8B;
+}
+
+
+/* header row */
+QCalendarWidget QWidget { 
+				alternate-background-color: #b0bec5; 
+				alternate-color: white;}
+
+QDateEdit {
+                border: none;
+                padding-bottom: 2px;
+                font-size: 12pt;
+				border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);}
+
+QDateEdit::hover {
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);}
+
+QDateEdit::focus {
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+QDateEdit::down-arrow {
+				image: url(:/icons/dropdown.png);
+                background-color: white;
+                border: 0px white;
+                padding: 0px;
+                margin: 0px;
+                height:14px;
+                width:14px;}
+
+QDateEdit::drop-down{
+				subcontrol-origin: padding;
+				subcontrol-position: center right;
+ 			    width: 15px;
+                border: 0px;
+                margin: 0px; }
+
+QDateEdit QAbstractItemView {
+                font: 12pt;}</string>
+            </property>
+            <property name="maximumDateTime">
+             <datetime>
+              <hour>0</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2019</year>
+              <month>4</month>
+              <day>16</day>
+             </datetime>
+            </property>
+            <property name="maximumDate">
+             <date>
+              <year>2019</year>
+              <month>4</month>
+              <day>16</day>
+             </date>
+            </property>
+            <property name="minimumDate">
+             <date>
+              <year>2018</year>
+              <month>4</month>
+              <day>16</day>
+             </date>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(0, 0, 0, 0.48);
+heigh: 1em;</string>
+            </property>
+            <property name="text">
+             <string>Date Observed</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+border: 0px;
+padding: 0px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resource.qrc">:/icons/tool_ico.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+			color: rgba(0, 0, 0, 0.48);
+			heigh: 1em;
+			background-color: white;}</string>
+            </property>
+            <property name="text">
+             <string>Tool</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+                border: none;
+                padding-bottom: 2px;
+                font-size: 12pt;
+				border-bottom: 1px solid rgba(0,0,0,0.42);
+                background-color: white;
+                color: rgba(0,0,0,0.42);}
+
+QComboBox::hover {
+                border-bottom: 2px solid rgba(0,0,0,0.6);
+                color: rgba(0,0,0,0.54);}
+
+QComboBox::focus {
+                border-bottom: 2px solid #009688;
+                color: rgba(0,0,0,0.87);}
+
+QComboBox::down-arrow {
+				image: url(:/icons/dropdown.png);
+                background-color: white;
+                border: 0px white;
+                padding: 0px;
+                margin: 0px;
+                height:14px;
+                width:14px;}
+
+QComboBox::drop-down{
+				subcontrol-origin: padding;
+				subcontrol-position: center right;
+ 			    width: 15px;
+                border: 0px;
+                margin: 0px; }
+
+QComboBox QAbstractItemView {
+                font: 14pt;}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Tasks</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>New</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="text">
+                <string>Edit</string>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="text">
+                <string>Delete</string>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+            background-color: rgba(0,0,0,0);
+            border: 0px;
+            color: #009688;
+            font: bold 15pt;
+			min-height: 1.2em;}
+
+        QPushButton:hover, QPushButton:hover:focus {
+            background-color: rgba(0,0,0,0.05);
+        }
+
+        QPushButton:pressed,
+        QPushButton:pressed:focus {
+            background-color: rgba(153,153,153,0.4);
+        }
+
+        QPushButton:disabled {
+            color: lightGray;
+            background-color: gray;
+            border: none
+        }</string>
+       </property>
+       <property name="text">
+        <string>SUBMIT</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+            background-color: rgba(0,0,0,0);
+            border: 0px;
+            color: #009688;
+            font: 15pt;
+			min-height: 1.2em;}
+
+        QPushButton:hover, QPushButton:hover:focus {
+            background-color: rgba(0,0,0,0.05);
+        }
+
+        QPushButton:pressed,
+        QPushButton:pressed:focus {
+            background-color: rgba(153,153,153,0.4);
+        }
+
+        QPushButton:disabled {
+            color: lightGray;
+            background-color: gray;
+            border: none
+        }</string>
+       </property>
+       <property name="text">
+        <string>DISCARD</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
